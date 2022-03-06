@@ -2691,7 +2691,7 @@ function library:Load(opts)
                     toggleColorPicker.Visible = true
                 end
                 
-                return toggleColorPicker
+                return toggleColorPickerTypes
             end
 
             return sectionTypes
