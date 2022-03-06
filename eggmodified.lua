@@ -647,7 +647,7 @@ function library:Load(opts)
                 local placeholder = options.name or options.placeholder
                 local default = options.default or ""
                 local flag = options.flag or nil
-                local callback = options.callback or nil
+                local callback = options.callback or function() end
 
                 local mouseOver = false
                 local focused = false
