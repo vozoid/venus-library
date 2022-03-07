@@ -662,6 +662,7 @@ function library:Load(opts)
                     TextColor3 = theme.TextColor,
                     Text = "",
                     Font = Enum.Font.Gotham,
+		    ClipsDescendants = true,
                     PlaceholderText = placeholder,
                     Parent = sectionContent
                 })
