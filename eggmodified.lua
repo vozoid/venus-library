@@ -304,6 +304,10 @@ function library:Load(opts)
     local windowTypes = {count = 0}
     windowTypes = utility.format_table(windowTypes)
 
+    function windowTypes:Resize(y)
+        main.Size = UDim2.new(0, main.AbsoluteSize.X, 0, main.AbsoluteSize.Y + y)
+    end
+
     function windowTypes:Tab(name)
         windowTypes.count = windowTypes.count + 1
         local toggled = windowTypes.count == 1
